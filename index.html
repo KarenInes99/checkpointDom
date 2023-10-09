@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panier achat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="main">
+
+        <p class="mon_panier">Mon panier</p>
+        <table>
+            
+            <thead>
+                <tr>
+                    <th>Nom de l'article</th>
+                    <th>Quantite</th>
+                    <th>Prix unitaire</th>
+                    <th>Sous total</th>
+                </tr>
+            </thead>
+    
+    
+            <tbody class="tableau">
+                <tr class="article">
+                    <td>
+                        <div class="label">
+                            <div class="bloc_img">
+                                <img src="images/gg-1.jpeg" alt="" class="image">
+                            </div>
+                            <div>
+                                <p class="title">Telephone</p>
+                                <p class="supprimer">Supprimer</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="">
+                        <button class="dec moins">-</button>
+                        <input type="text" class="quantite" value="1">
+                        <button class="plus">+</button>
+                    </td>
+                    <td class="prix_unitaire">15000 fr</td>
+                    <td class="prix_soustotal">15000 fr</td>
+            
+                </tr>
+            
+            </tbody>
+    
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Nom de l'article" class="nom_ajout">
+                    </td>
+                    <td>
+                        <input type="text" class="dec prix_ajout" value="1000">
+                    </td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="dec bouton_ajout"> Ajouter un article</button>
+                    </td>
+                </tr>
+    
+            </tfoot>
+        </table>
+        <p class="total">Total: <span class="prix_total">0 FCFA</span></p>
+
+    </div>
+        
+
+ <script src="dom.js"></script>      
+</body>
+</html>
