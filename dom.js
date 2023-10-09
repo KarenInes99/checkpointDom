@@ -79,6 +79,7 @@ function Total() {
 function Suppression() {
     let articleASupprimer= this.parentElement.previousElementSibling.parentElement.parentElement.parentElement;
     articleASupprimer.remove();
+    Total();
 }
 
 
